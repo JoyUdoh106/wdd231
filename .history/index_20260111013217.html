@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy Paulinus Udoh Site | Home Page</title>
+    <meta name="description" content="My Site">
+    <meta name="author" content="Joy Paulinus Udoh">
+
+    <!-- Style Sheets Here -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <!-- Script Files Here -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/home.svg" alt="Site Logo" width="512" height="512">
+        <span>Joy Paulinus Udoh</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home Page</h1>
+        <div class="main-content">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias numquam nulla officia commodi atque, fuga delectus odit consequuntur vero? Magnam veniam voluptates velit? Neque deleniti consequatur culpa vel ratione explicabo, corporis, quia cum excepturi accusamus eos quas! Magni ratione dolore iure officia reiciendis repellat tempore amet perferendis molestiae modi adipisci, optio architecto? Doloribus culpa enim inventore. Unde, iste animi. Ipsum fuga voluptatibus vitae eum numquam provident aspernatur accusamus placeat doloremque quae quisquam quaerat consectetur excepturi tempora illo id, nam animi incidunt ab reprehenderit modi fugit voluptatem recusandae. Eligendi inventore, eaque dignissimos dolor placeat, assumenda aspernatur nam, itaque atque odio ducimus.</p>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Student Photo</h2>
+                <div >
+                    <img class="photo" src="images/profile.webp" alt="my profile photo">
+                </div>
+            </section>
+        </div>
+        <section class="certified-container">
+            <h2>Web Certicate Courses</h2>
+
+            <nav class="course-filters">
+                <button id="all-btn">ALL</button>
+                <button id="cse-btn">CSE</button>
+                <button id="wdd-btn">WDD</button>
+            </nav>
+
+            <div id="course-display"></div>
+
+            <p class="credit-total">Total Credits: <span id="total-credits">0</span></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/linkedin.svg" alt="" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/microsoft-teams.svg" alt="" width="16" height="16"></a>
+        </div>
+        <div>
+            &copy; <span id="currentyear"></span> &bull; Joy Paulinus Udoh  &bull; Akwaibom, Nigeria
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

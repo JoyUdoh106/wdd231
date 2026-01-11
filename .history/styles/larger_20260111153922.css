@@ -1,0 +1,47 @@
+@media only screen and (min-width: 38rem) {
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #eee;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .main-content {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
+    #course-display {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .course-filters {
+        justify-content: space-evenly; /* Spreads buttons across the width */
+        display: flex;
+    }
+    
+    .course-filters button {
+        padding: 12px 60px; /* Makes buttons even wider on desktop */
+    }
+}
