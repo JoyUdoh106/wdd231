@@ -189,7 +189,7 @@ header {
 .button {
     color: var(--text-color);
     background-color: var(--background-color);
-    border-radius: 6px;
+    border-radius: px;
     border: solid 1px #aaa;
     padding: 10px;
     cursor: pointer;

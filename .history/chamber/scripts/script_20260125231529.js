@@ -24,12 +24,12 @@ const displayMembers = (members) => {
         let card = document.createElement('section');
         let imagePath = `images/${member.image}`;
         card.innerHTML = `
-            <img src="${imagePath}" alt="${member.name} logo" loading="lazy">
+            <img src="images/${imagePath}" alt="${member.name} logo" loading="lazy">
             <h3>${member.name}</h3>
             <p>${member.address}</p>
             <p>${member.phone}</p>
             <a style="text-decoration: none; color: blue; href="${member.website}">Visit Site</a>
-            <p>Membership: ${member.level === 3 ? 'Silver' : 'Gold'}</p>
+            <p>Membership: ${member.level === 3 ? 'Silver' : ''}</p>
         `;
         display.appendChild(card);
     });
@@ -49,10 +49,6 @@ document.querySelector('#list-view').addEventListener('click', () => {
 });
 
 getMembers();
-
-const yearSpan = document.querySelector("#currentyear");
-const currentYear = new Date().getFullYear();
-const lastModifiedElement = document.getElementById("lastModified");
 
 yearSpan.textContent = currentYear;
 lastModifiedElement.textContent = `Last Modified: ${document.lastModified}`;
