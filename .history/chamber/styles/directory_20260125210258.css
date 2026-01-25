@@ -1,0 +1,201 @@
+
+:root {
+    --primary-color: #3D405B;
+    --secondary-color: #5C5F75;
+    --background-color: #b5b7c2;
+    --text-color: #363a66;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather', 'Roboto', sans-serif;
+}
+
+/************************* HEADER *************************/
+
+header {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-bottom: 1px solid #bbb;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-area img {
+    width: 40px;
+    height: auto;
+}
+
+.logo-area span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 10px;
+    flex-grow: 1;
+    color: var(--text-color);
+}
+
+/************************* HAMBURGER *************************/
+
+.hamburger {
+    background-color: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 3px;
+    margin: 8px;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/************************* Navigation *************************/
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.navigation li.current {
+    background-color: var(--background-color);
+}
+
+.navigation a:hover {
+    background-color: #ccc;
+}
+
+/************************* HERO *************************/
+
+/* .hero {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-label {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.button {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border-radius: 5px;
+    border: solid 1px #aaa;
+    padding: 10px;
+    cursor: pointer;
+} */
+
+
+/************************* DIRECTORY LAYOUT *************************/
+
+/* --- Directory Layout --- */
+.directory-controls {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 10px;
+}
+
+#member-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    color: var(--text-color);
+}
+
+#member-container.list {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    grid-auto-flow: row;
+    gap: 10px;
+    
+}
+
+/************************* MOBILE CARD *************************/
+#member-container section {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background: #fff;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#member-container img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.button {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    border-radius: 5px;
+    border: solid 1px #aaa;
+    padding: 10px;
+    cursor: pointer;
+} 
+
+/************************* FOOTER *************************/
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.social {
+   gap: 30px;
+   display: flex;
+}
+
+.social img {
+    filter: brightness(1) invert(0);
+}

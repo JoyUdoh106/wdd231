@@ -1,0 +1,13 @@
+/*  primary color - 
+    Secondary color - 
+    Background color -
+    Text color - #
+    Font family - Merriweather, Roboto
+ */
+
+ :root {
+    --primary-color: #3D405B;
+    --secondary-color: #5C5F75;
+    --background-color: #3D405D;
+    --text-color: ;
+ }

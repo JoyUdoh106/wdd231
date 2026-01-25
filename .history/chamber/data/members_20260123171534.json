@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Dangote Group (Conglomerate – Manufacturing / Industrial)",
+        "address": "Leadway Marble House, 1 Alfred Rewane Road, PMB 40032, Falomo Ikoyi, Lagos, Nigeria",
+        "phone": "+234 1 448 0815 / +234 1 448 0816",
+        "website": "https://www.dangote.com/",
+        "image": "dangote_group.jpg",
+        "level": "3 (gold)"
+    },
+
+    {
+        "name": "Interswitch Group (Fintech / Payments)",
+        "address": "Plot 1648C, Oko-Awo Close, Karimu Kotun Street, Victoria Island, Lagos, Nigeria",
+        "phone": "+234 1 4616 300 / +234 700 906 5000",
+        "website": "https://www.interswitchgroup.com/",
+        "image": "interswitch_group.jpg",
+        "level": "3 (gold)"
+    },
+
+    {
+        "name": "Konga.com (E-commerce / Retail)",
+        "address": "Gbagada, Lagos State, Nigeria",
+        "phone": "(Contact via site; phone varies by service)",
+        "website": "https://www.konga.com/",
+        "image": "konga_com.jpg",
+        "level": "2 (silver)"
+    },
+
+    {
+        "name": "Opay Digital Services Limited (Fintech / Mobile Banking)",
+        "address": "Ikeja, Lagos State, Nigeria",
+        "phone": "(Check official site/contact after verification)",
+        "website": "https://www.opayweb.com/",
+        "image": "opay_logo.png",
+        "level": "2 (silver)"
+    },
+
+    {
+        "name": "FoodCo Nigeria Limited (Retail / Supermarket Chain)",
+        "address": "Ibadan, Oyo State, Nigeria (main HQ)",
+        "phone": "(Check official site for store contact numbers)",
+        "website": "https://foodco.ng/",
+        "image": "foodco_nigeria.jpg",
+        "level": "1 (member)"
+    },
+
+    {
+        "name": "Terragon Group Ltd (Marketing Technology)",
+        "address": "Lagos, Nigeria",
+        "phone": "(Check official site “Contact” page)",
+        "website": "https://terragongroup.com/",
+        "image": "terragon_group.jpg",
+        "level": "1 (member)"
+    },
+
+    {
+        "name": "PAN Nigeria Ltd (Manufacturing – Consumer goods)",
+        "address": "PAN Drive, Kakuri Industrial Estate, Kaduna, Nigeria",
+        "phone": "(Check official site “Contact” page)",
+        "website": "",
+        "image": "",
+        "level": ""
+    }
+
+]

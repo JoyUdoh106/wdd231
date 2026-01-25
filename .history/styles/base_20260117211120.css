@@ -1,0 +1,240 @@
+/* --------- Color Scheme ---------- 
+terra cotta #E2725B
+deep slate blue #3D405B, 
+*/
+
+/********************** SITE WIDE *************************/
+* {
+    font-family: "Merr";
+    box-sizing: border-box;
+}
+
+/********************* HEADER *********************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 10px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 4px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #3D405B;
+}
+
+/********************* HAMBURGER *********************/
+.hamburger {
+    background-color: none;
+    border: none;
+    font-size: 2rem;
+    color: #3D405B;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/********************* NAVIGATION *********************/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: #3D405B;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: #E2725B;
+}
+
+/************************ MAIN ************************/
+h1 {
+    margin-left: 10px;
+    color: #3D405B;
+    padding: 0 4px;
+}
+
+h2 {
+    color: #3D405B;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+main {
+    padding: 0;
+}
+.main-content {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 15px;
+   padding: 10px;
+}
+
+section {
+    border: solid 1px #eee;
+    background-color: #ddd;
+    border-radius: 12px;
+}
+
+p {
+    color: #3D405B;
+}
+
+.card {
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card img {
+    width: 80%;
+    max-width: 170px;
+    height: auto;
+    box-shadow: 0 4px 8px #3D405B;
+    border-radius: 8px;
+    display: block;
+    margin: 5px 27px;
+    justify-self: center;
+    align-self: center;
+}
+
+/* Container for course buttons/cards */
+#course-display {
+    display: grid;
+    grid-template-columns: 1fr; /* Default mobile view */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.course-card {
+    background-color: #f0f0f0;
+    border: 1px solid #bbb;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+/* Style for completed courses */
+.course-card.completed {
+    background-color: #E2725B; /* Dark Red/Maroon */
+    color: #fff;              /* White text for contrast */
+    font-weight: bold;
+    border-color: #E27679;
+}
+
+/* Hover effect to make it interactive */
+.course-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Container for the filter buttons */
+.course-filters {
+    display: grid;
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 5px;               /* Space between buttons */
+    margin: 20px 0;
+    flex-wrap: wrap;         /* Allows them to wrap on small mobile screens */
+}
+
+/* Base button design */
+.course-filters button {
+    background-color: #eee; 
+    color: #3D405B;
+    border: 2px solid #ddd;    /* Dark border seen in reference */
+    border-radius: 10px;       /* Rounded corners for the pill shape */
+    padding: 10px 240px;      /* Vertical and wide horizontal padding */
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    min-width: 50px;          /* Ensures buttons stay a consistent size */
+}
+
+/* Hover effect */
+.course-filters button:hover {
+    background-color: #ccc;    /* Background turns black on hover */
+    color: #eee;               /* Text turns white on hover */
+}
+
+/* Active/Selected state (optional: add this class via JS when clicked) */
+.course-filters button.active {
+    background-color: #444;
+    color: #fff;
+}
+
+.certified-container {
+    padding: 8px 12px;
+}
+
+/************************** FOOTER **************************/
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc dashed 1px;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}

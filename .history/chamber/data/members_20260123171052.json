@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Dangote Group (Conglomerate – Manufacturing / Industrial)",
+        "address": "Leadway Marble House, 1 Alfred Rewane Road, PMB 40032, Falomo Ikoyi, Lagos, Nigeria",
+        "phone": "+234 1 448 0815 / +234 1 448 0816",
+        "website": "https://www.dangote.com/",
+        "image": "dangote_group.jpg",
+        "level": "3 (gold)"
+    },
+
+    {
+        "name": "Interswitch Group (Fintech / Payments)",
+        "address": "Plot 1648C, Oko-Awo Close, Karimu Kotun Street, Victoria Island, Lagos, Nigeria",
+        "phone": "+234 1 4616 300 / +234 700 906 5000",
+        "website": "https://www.interswitchgroup.com/",
+        "image": "interswitch_group.jpg",
+        "level": "3 (gold)"
+    },
+
+    {
+        "name": "Konga.com (E-commerce / Retail)",
+        "address": "Gbagada, Lagos State, Nigeria",
+        "phone": "(Contact via site; phone varies by service)",
+        "website": "https://www.konga.com/",
+        "image": "konga_com.jpg",
+        "level": "2 (silver)"
+    },
+
+    {
+        "name": "Opay Digital Services Limited (Fintech / Mobile Banking)",
+        "address": "Ikeja, Lagos State, Nigeria",
+        "phone": "",
+        "website": "",
+        "image": "",
+        "level": ""
+    },
+
+    {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "image": "",
+        "level": ""
+    },
+
+    {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "image": "",
+        "level": ""
+    },
+
+    {
+        "name": "",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "image": "",
+        "level": ""
+    }
+
+]

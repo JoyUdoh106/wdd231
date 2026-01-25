@@ -1,0 +1,31 @@
+/*  primary color - 
+    Secondary color - 
+    Background color -
+    Text color - #
+    Font family - Merriweather, Roboto
+*/
+
+:root {
+    --primary-color: #3D405B;
+    --secondary-color: #5C5F75;
+    --background-color: #b5b7c2;
+    --text-color: #363a66;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather', 'Roboto', sans-serif;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header img {
+    display: block;
+    width: 10%;
+    height: auto;
+    padding-bottom: 4px;
+}

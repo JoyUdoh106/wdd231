@@ -1,0 +1,73 @@
+/*  primary color - 
+    Secondary color - 
+    Background color -
+    Text color - #
+    Font family - Merriweather, Roboto
+*/
+
+:root {
+    --primary-color: #3D405B;
+    --secondary-color: #5C5F75;
+    --background-color: #b5b7c2;
+    --text-color: #363a66;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather', 'Roboto', sans-serif;
+}
+
+header {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-bottom: 1px solid #bbb;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo-area img {
+    width: 40px;
+    height: auto;
+}
+
+.logo-area span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+.hamburger {
+    background-color: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 2px;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.navigation.open {
+    display: block;
+}

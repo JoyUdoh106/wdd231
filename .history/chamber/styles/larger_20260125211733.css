@@ -1,0 +1,68 @@
+@media only screen and (min-width: 38rem) {
+    header, main, nav, footer{
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    header {
+        flex-direction: row;
+    }
+
+
+    #ham-btn, #tog-btn {
+        display: none;
+    }
+
+     .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+
+    .navigation a {
+        border: none;
+    }
+
+    /************************* CONTAINER *************************/
+
+    /* --- Grid View for Members --- */
+    #member-container.grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    /* --- List View for Members --- */
+    #member-container.list section {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 1fr;
+        align-items: center;
+        text-align: left;
+        padding: 0.5rem;
+    }
+
+    #member-container.list section img {
+        display: none; /* Typical for list view to save space */
+    }
+
+    /************************* FOOTER *************************/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        text-align: left;
+        padding: 2rem 5%;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+     .social img {
+        gap: px;
+     }
+
+}
