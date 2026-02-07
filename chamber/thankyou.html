@@ -1,0 +1,20 @@
+<main>
+    <h1>Thank You for Submitting!</h1>
+    <div id="display-data" class="data-card">
+        </div>
+</main>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const display = document.getElementById('display-data');
+
+    // List of required keys from the rubric
+    const requiredKeys = ['firstName', 'lastName', 'email', 'phone', 'organization', 'timestamp'];
+    
+    requiredKeys.forEach(key => {
+        if(urlParams.has(key)) {
+            const val = urlParams.get(key);
+            display.innerHTML += `<p><strong>${key.replace(/([A-Z])/g, ' $1').toUpperCase()}:</strong> ${decodeURIComponent(val)}</p>`;
+        }
+    });
+</script>

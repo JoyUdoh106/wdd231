@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria Chamber of Commerce</title>
+    <meta name="description" content="Check out my progress for My first certificate, Web and Computer Programming">
+    <meta name="author" content="Joy Paulinus Udoh">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Open Graph Meta Properties -->
+    <meta property="o.g:title" content="Nigeria Chamber of Commerce">
+    <meta property="o.g:description" content="Check out my progress for My first certificate, Web and Computer Programming">
+    <meta property="o.g:image" content=" https://joyudoh106.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="o.g:url" content=" https://joyudoh106.github.io/wdd231/chamber/directory.html">
+
+    <!-- Favicon Here -->
+    <link rel="icon" href="icon/favicon (1).ico">
+
+    <!-- Style Sheets Here -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Script Files Here -->
+    <script src="scripts/script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Chamber Membership Join</h1>
+    </header>
+
+    <main class="join-container">
+        <form method="get" action="thankyou.html" class="membership-form">
+            <label>First Name:
+                <input type="text" name="firstName" autocomplete="given-name" required title="First Name">
+            </label>
+
+            <label>Last Name:
+                <input type="text" name="lastName" autocomplete="family-name" required title="Last Name">
+            </label>
+
+            <label>Organizational Title:
+                <input type="text" name="orgTitle" autocomplete="organization-title" 
+                pattern="[a-zA-Z\s-]{7,}" title="Minimum 7 characters (letters, hyphens, spaces only)" required>
+            </label>
+
+            <label>Email Address:
+                <input type="email" name="email" autocomplete="email" placeholder="example@domain.com" required title="Email Address">
+            </label>
+
+            <label>Mobile Phone:
+                <input type="tel" name="phone" autocomplete="tel" required title="Mobile Phone">
+            </label>
+
+            <label>Business Name:
+                <input type="text" name="organization" autocomplete="organization" required title="Business Name">
+            </label>
+
+            <label>Membership Level:
+                <select name="level" required>
+                    <option value="" disabled selected>Select a level...</option>
+                    <option value="np">NP Membership (Non-profit)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+
+            <label>Business Description:
+                <textarea name="description" title="Business Description"></textarea>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Join the Chamber">
+        </form>
+
+        <div class="membership-cards">
+            <div class="card" id="np-card">
+                <h3>NP Membership</h3>
+                <button type="button" class="open-modal" data-target="#np-modal">Learn More</button>
+            </div>
+            <div class="card" id="bronze-card">
+                <h3>Bronze Membership</h3>
+                <button type="button" class="open-modal" data-target="#bronze-modal">Learn More</button>
+            </div>
+            <div class="card" id="silver-card">
+                <h3>Silver Membership</h3>
+                <button type="button" class="open-modal" data-target="#silver-modal">Learn More</button>
+            </div>
+            <div class="card" id="gold-card">
+                <h3>Gold Membership</h3>
+                <button type="button" class="open-modal" data-target="#gold-modal">Learn More</button>
+            </div>
+        </div>
+    </main>
+
+    <dialog id="np-modal">
+        <button class="close-modal">X</button>
+        <h2>NP Membership</h2>
+        <p>Cost: Free. Benefits include directory listing and community event access.</p>
+    </dialog>
+    <dialog id="bronze-modal">
+        <button class="close-modal">X</button>
+        <h2>Bronze Membership</h2>
+        <p>Cost: $100/yr. Includes basic advertising and training workshops.</p>
+    </dialog>
+    <dialog id="silver-modal">
+        <button class="close-modal">X</button>
+        <h2>Silver Membership</h2>
+        <p>Cost: $300/yr. Includes spotlight positions and event discounts.</p>
+    </dialog>
+    <dialog id="gold-modal">
+        <button class="close-modal">X</button>
+        <h2>Gold Membership</h2>
+        <p>Cost: $500/yr. Full advertising suite and VIP event access.</p>
+    </dialog>
+
+    <script src="scripts/join.js"></script>
+</body>
+</html>

@@ -67,8 +67,6 @@
         padding-top: 0;
     }
 
-     .join-container {
-        grid-template-columns: 2fr 1fr;
-    }
+    
 
 }

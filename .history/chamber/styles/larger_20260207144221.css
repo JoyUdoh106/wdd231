@@ -67,8 +67,11 @@
         padding-top: 0;
     }
 
-     .join-container {
-        grid-template-columns: 2fr 1fr;
+    .join-container {
+        flex-direction: row;
+        align-items: flex-start;
     }
+    .membership-form { flex: 2; }
+    .membership-cards { flex: 1; }
 
 }
