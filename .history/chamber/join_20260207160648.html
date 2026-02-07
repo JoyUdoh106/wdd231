@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria Chamber of Commerce - JOIN PAGE </title>
+    <meta name="description" content="Check out my progress for My first certificate, Web and Computer Programming">
+    <meta name="author" content="Joy Paulinus Udoh">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Open Graph Meta Properties -->
+    <meta property="o.g:title" content="Nigeria Chamber of Commerce">
+    <meta property="o.g:description" content="Check out my progress for My first certificate, Web and Computer Programming">
+    <meta property="o.g:image" content=" https://joyudoh106.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="o.g:url" content=" https://joyudoh106.github.io/wdd231/chamber/directory.html">
+
+    <!-- Favicon Here -->
+    <link rel="icon" href="icon/favicon (1).ico">
+
+    <!-- Style Sheets Here -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <!-- Script Files Here -->
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/join.js" ></script>
+
+</head>
+<body>
+   
+    <header>
+        <div class="logo-area">
+            <img src="images/home.svg" alt="Site Logo" width="512" height="512">
+            <span>Lagos Chamber of Commerce</span>
+            <!-- <button id="tog-btn" class="toggle"></button> -->
+            <button id="ham-btn" class="hamburger"></button>
+        </div>
+
+        <nav class="navigation" id="nav-bar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ <main class="join-container">
+        <section class="form-section">
+            <h2>Membership Application</h2>
+            <form method="get" action="thankyou.html" class="membership-form">
+                <label for="fname">First Name
+                    <input type="text" id="fname" name="firstName" autocomplete="given-name" required title="Enter your first name">
+                </label>
+
+                <label for="lname">Last Name
+                    <input type="text" id="lname" name="lastName" autocomplete="family-name" required title="Enter your last name">
+                </label>
+
+                <label for="title">Organizational Title
+                    <input type="text" id="title" name="orgTitle" autocomplete="organization-title" 
+                    pattern="[a-zA-Z\s-]{7,}" title="Minimum 7 characters (letters, hyphens, and spaces only)" required>
+                </label>
+
+                <label for="email">Email Address
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="name@example.com" required title="Enter a valid email address">
+                </label>
+
+                <label for="phone">Mobile Phone
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" required title="Enter your mobile phone number">
+                </label>
+
+                <label for="org">Business/Organization Name
+                    <input type="text" id="org" name="organization" autocomplete="organization" required title="Enter your organization name">
+                </label>
+
+                <label for="membership">Membership Level
+                    <select id="membership" name="level" required title="Select your membership level">
+                        <option value="" disabled selected>Select a level...</option>
+                        <option value="np">NP Membership (Non-profit) - No Fee</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label for="description">Business Description
+                    <textarea id="description" name="description" title="Briefly describe your business"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+                <button type="submit" id="submitBtn">Join the Chamber</button>
+            </form>
+        </section>
+
+        <section class="membership-cards">
+            <h2>Membership Levels</h2>
+            <div class="card">
+                <h3>NP Membership</h3>
+                <button type="button" class="open-modal" data-target="#np-modal">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Bronze Membership</h3>
+                <button type="button" class="open-modal" data-target="#bronze-modal">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Silver Membership</h3>
+                <button type="button" class="open-modal" data-target="#silver-modal">Learn More</button>
+            </div>
+            <div class="card">
+                <h3>Gold Membership</h3>
+                <button type="button" class="open-modal" data-target="#gold-modal">Learn More</button>
+            </div>
+        </section>
+    </main>
+
+    <dialog id="np-modal">
+        <div class="modal-content">
+            <h3>Non-Profit Membership</h3>
+            <p><strong>Cost:</strong> Free</p>
+            <ul>
+                <li>Community Directory Listing</li>
+                <li>Access to monthly mixers</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </div>
+    </dialog>
+   <footer>
+        <div class="footer-contact">
+            <p><strong>Nigeria Chamber of Commerce</strong></p>
+            <p>09, Kayode Alabi Street</p>
+            <p>Nigeria, Lagos</p>
+            <p>info@nigeriachamber</p>
+            <p>(234) 914370364</p>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com/joypaulinusudoh" target="_blank"><img src="images/facebook.svg" alt="facebook"></a>
+            <a href="https://github.com/JoyUdoh106" target="_blank"><img src="images/github.svg" alt="github"></a>
+            <a href="https://linkedin.com/in/joypaulinusudoh" target="_blank"><img src="images/linkedin.svg" alt="Likedin"></a>
+        </div>
+        <div class="footer-info">
+            <p>WDD 231 Class Project</p>
+            <p>Joy Paulinus Udoh</p>
+            &copy; <span id="currentyear"></span> &bull; Nigeria Chamber of Commerce &bull; Lagos, Nigeria
+        </div>
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+</html>
